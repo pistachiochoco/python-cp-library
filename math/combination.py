@@ -24,7 +24,7 @@ class Combination:
 
         self.fact_inv[n] = pow(self.fact[n], mod - 2, mod)
         for i in range(n - 1, -1, -1):
-            self.fact_inv[i] = self.fact_inv[i+1] * (i + 1) % mod
+            self.fact_inv[i] = self.fact_inv[i + 1] * (i + 1) % mod
     
     def nCk(self, n, k):
         if k < 0 or k > n or n > self.n:
