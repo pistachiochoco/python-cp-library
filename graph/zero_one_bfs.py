@@ -15,7 +15,6 @@ INF = float("inf")
 
 def zero_one_bfs(adj, s):
     """
-    n: Number of nodes.
     adj : Adjacency list: adj[u] = [(v, w), ...] means an edge u->v with weight w.
           Each weight w must be 0 or 1.
     s : Index of the starting node.
