@@ -2,6 +2,9 @@
 dijkstra.py
 
 Compute the shortest paths in a weighted graph.
+
+Time Complexity: O((N + M) log N)
+Space Complexity: O(N)
 """
 
 import heapq
