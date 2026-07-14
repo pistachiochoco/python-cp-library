@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.buffer.readline
+
 
 class FenwickTree:
     def __init__(self, n) -> None:
@@ -11,7 +13,7 @@ class FenwickTree:
         while i <= self.n:
             self.bit[i] += x
             i += i & -i
-    
+
     # [0, i)
     def _sum(self, i):
         s = 0
@@ -19,7 +21,7 @@ class FenwickTree:
             s += self.bit[i]
             i -= i & -i
         return s
-    
+
     # [l, r)
     def sum(self, l, r):
         return self._sum(r) - self._sum(l)
